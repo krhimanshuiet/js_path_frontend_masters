@@ -75,3 +75,15 @@ var {
   b: { x, y },
   c: [z, w] = [],
 } = obj || {};
+
+const uselocation = {
+  pathname:"dksdks",
+  search:"searcg",
+  hash:"abcd",
+  state:null,
+  key:"xyz"
+}
+
+uselocation
+
+const {state} = uselocation
