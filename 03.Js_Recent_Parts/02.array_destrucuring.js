@@ -57,8 +57,13 @@ var y = 20;
 // swap
 [y, x] = [x, y];
 
-function data1(tmp = []) {
-  var [first, second, third] = tmp;
+function data1([first, second, third]) {
+  console.log(first, second, third);
+  // var [first, second, third] = tmp;
 }
 
-function data1([first, second, third] = []) {}
+// function data1([first, second, third] = []) {
+
+// }
+
+data1([10, 20, 30]);
