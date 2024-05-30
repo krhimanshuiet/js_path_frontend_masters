@@ -26,6 +26,9 @@ class PaidUserCreater extends UserCreater {
     // same as super Reflect.construct(UserCreater,[paidName,paidScore],PaidUserCreater)
     // under the hood super does this for us UserCreater.call(this,paidName,paidScore),
     // since UserCreator is available in its __proto__
+    // and when it calls UserCreater under the hood the this object that it makes it ints
+    // local memory is not linked to UserCreator.prototype  as usual instead
+    // of that is linked to PaidUserCreator.prototype
     this.accountBalance = accountBalance;
   }
   increaseAccountBalance() {
