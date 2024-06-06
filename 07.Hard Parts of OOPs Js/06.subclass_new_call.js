@@ -35,7 +35,7 @@ const paidUser = new PaidUserCreater("amit", 56, 89688);
 
 paidUser;
 paidUser.sayHello();
-
+console.log(paidUser.__proto__);
 console.log(UserCreater.__proto__ === Function.prototype);
 console.log(UserCreater.prototype.__proto__ === Object.prototype);
 console.log(Object.__proto__ === Function.prototype);
